@@ -1,0 +1,23 @@
+
+
+
+<h1><%=@dojos.branch %> <%= @students.first_name %> <%= @students.last_name %> </h1>
+<p>Email <%= @students.email%></p>
+<table id="customers">
+  <thead>
+    <tr>
+      <td>First_name</td>
+      <td>Last_name</td>
+      <td>Email</td>
+      
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><%= @students.first_name %></td>
+      <td><%= @students.last_name %></td>
+      <td><%= @students.email %></td>
+    </tr>
+  </tbody>
+</table><br>
+<a href="/dojos">Home</a> | | <a href="/dojos/<%=@dojos.id%>/student/<%=@students.id%>">Edit</a>
